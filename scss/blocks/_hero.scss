@@ -1,0 +1,162 @@
+.hero__screen {
+  position: relative;
+  background: #2d2641;
+  padding-top: 100px;
+  height: 600px;
+  margin-top: 20px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    background-image: url("/img/back1.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 5px;
+    bottom: -290px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("/img/back2.png");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    right: -45px;
+    bottom: 150px;
+    display: inline-block;
+  }
+}
+
+.hero__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__body-box-span {
+  border-top: 1px solid;
+  width: 150px;
+  height: 2px;
+  display: inline-block;
+  background: #ffffff;
+}
+
+.hero__body-box {
+  max-width: 540px;
+}
+
+.hero__body-box-title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.hero__body-box-text {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.hero__body-box-link {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  padding: 15px 25px;
+  border: 1.5px solid #ffffff;
+  display: inline-block;
+  &:hover {
+    background: #ffffff;
+    color: #2c2830;
+  }
+}
+
+.hero__body-img {
+  width: 100%;
+}
+
+#check,
+.label__check {
+  display: none;
+}
+
+#menu,
+#close {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+    #menu,
+#close {
+  display: block;
+  top: 45px;
+  font-size: 25px;
+}
+#close{
+    display: none;
+}
+  .hero__screen {
+    background: #2d2641;
+    height: 100%;
+    padding: 0 0 0 0;
+    &::after {
+      display: none;
+    }
+  }
+
+  .container {
+    padding: 0 0;
+  }
+
+  .label__check {
+    display: block;
+  }
+  
+.hero__body-box {
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .hero__body-box-title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.666667px;
+    color: #ffffff;
+  }
+  
+  .hero__body-img {
+    width: 100%;
+  }
+  
+  .hero__body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  
+  .hero__body-box-link {
+    margin-bottom: 50px;
+  }
+  
+}

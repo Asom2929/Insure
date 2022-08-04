@@ -1,0 +1,83 @@
+.find-screen {
+    background: #2D2641;
+    margin-top: 160px;
+
+}
+
+.find__container {
+    padding: 0 100px;
+}
+
+
+
+.find {
+    display: flex;
+    align-items: center;
+    column-gap: 300px;
+    flex-wrap: wrap;
+    background: #2D2641;
+    background-image: url('/img/find.png');
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.find__title {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.777778px;
+    color: #FFFFFF;
+    max-width: 475px;
+    padding: 70px 0 70px 0;
+
+}
+
+.find__link {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    padding: 12px 25px;
+    display: inline-block;
+    &:hover {
+        color: #2C2830;
+        background: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .find {
+        text-align: center;
+        padding-bottom: 70px;
+
+    }
+
+    .find__container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .find__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 40px;
+
+
+    }
+
+    .find__link {
+        color: #FFFFFF;
+        border: 1.5px solid #FFFFFF;
+        background: none;
+        display: inline-block;
+        margin: auto;
+    }
+}
